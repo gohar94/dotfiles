@@ -7,8 +7,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,11 +54,11 @@ set autochdir " automatically set current directory to directory of last opened 
 set hidden " allow auto-hiding of edited buffers
 set history=8192 " more history
 set nojoinspaces " suppress inserting two spaces between sentences
-" use 4 spaces instead of tabs during formatting
+" use 2 spaces instead of tabs during formatting
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 " smart case-sensitive search
 set ignorecase
 set smartcase
@@ -88,6 +88,10 @@ set noerrorbells visualbell t_vb=
 set splitbelow
 set splitright
 
+" show tabs
+set list
+set listchars=tab:>-
+
 " quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -111,3 +115,16 @@ nnoremap <leader>. :tabnext<CR>
 
 " jk is escape
 inoremap jk <esc>
+
+" Ruler
+set colorcolumn=80
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+
+"---------------------
+" Plugin configuration
+"---------------------
+
+" ctrlp
+nnoremap ; :CtrlPBuffer<CR>
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_show_hidden = 1
