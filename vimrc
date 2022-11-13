@@ -20,6 +20,11 @@ filetype plugin indent on    " required
 let mapleader = ","
 
 "------------------
+" Display
+"------------------
+set background=dark
+
+"------------------
 " Syntax and indent
 "------------------
 syntax on " turn on syntax highlighting
