@@ -23,6 +23,7 @@ let mapleader = ","
 " Display
 "------------------
 set background=dark
+colorscheme elflord
 
 "------------------
 " Syntax and indent
@@ -122,7 +123,7 @@ nnoremap <leader>. :tabnext<CR>
 inoremap jk <esc>
 
 " Ruler
-set colorcolumn=80
+set colorcolumn=81
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 
 "---------------------
