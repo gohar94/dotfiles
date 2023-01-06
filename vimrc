@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -23,7 +24,7 @@ let mapleader = ","
 " Display
 "------------------
 set background=dark
-colorscheme elflord
+colorscheme desert
 
 "------------------
 " Syntax and indent
