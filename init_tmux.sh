@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+set -eu
 
 # Globals
 SCRIPT_DIR=$(dirname $(readlink -f $0))
@@ -9,5 +9,6 @@ SCRIPT_DIR=$(dirname $(readlink -f $0))
 if [ -f ~/.tmux.conf ]; then
   mv ~/.tmux.conf ~/.tmux.conf.old
 fi
+
 ## Link new tmux.conf
 ln -s $SCRIPT_DIR/tmux.conf ~/.tmux.conf
