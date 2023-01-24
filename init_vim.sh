@@ -12,7 +12,6 @@ if [ -f ~/.vimrc ]; then
   mv ~/.vimrc ~/.vimrc.old
 fi
 ## Link new vimrc
-rm ~/.vimrc
 ln -s $SCRIPT_DIR/vimrc ~/.vimrc
 ## Post-install instructions
 echo "Run :PluginInstall after opening vim for the first time"

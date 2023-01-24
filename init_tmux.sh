@@ -10,5 +10,4 @@ if [ -f ~/.tmux.conf ]; then
   mv ~/.tmux.conf ~/.tmux.conf.old
 fi
 ## Link new tmux.conf
-rm ~/.tmux.conf
 ln -s $SCRIPT_DIR/tmux.conf ~/.tmux.conf
