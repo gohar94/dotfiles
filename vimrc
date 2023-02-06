@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'srcery-colors/srcery-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -23,8 +24,7 @@ let mapleader = ","
 "------------------
 " Display
 "------------------
-set background=dark
-colorscheme desert
+colorscheme srcery
 
 "------------------
 " Syntax and indent
