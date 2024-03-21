@@ -127,6 +127,9 @@ inoremap jk <esc>
 set colorcolumn=81
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 
+" Ignore in wildcard searches (also applies to ctrlp)
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/build,*/bin,*/lib
+
 "---------------------
 " Plugin configuration
 "---------------------
