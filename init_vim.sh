@@ -20,5 +20,8 @@ fi
 ## Link new vimrc
 ln -s $SCRIPT_DIR/vimrc ~/.vimrc
 
-## Post-install instructions
-echo "${green}Run :PluginInstall after opening vim for the first time${reset}"
+## Install
+vim -es +PluginInstall +qall 2>&1
+
+## Done
+echo "${green}vim setup complete!${reset}"
