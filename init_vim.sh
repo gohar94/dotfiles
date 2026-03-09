@@ -21,7 +21,7 @@ fi
 ln -s $SCRIPT_DIR/vimrc ~/.vimrc
 
 ## Install
-vim -es +PluginInstall +qall 2>&1
+vim -E -s -u ~/.vimrc +PluginInstall! +qall
 
 ## Done
 echo "${green}vim setup complete!${reset}"
