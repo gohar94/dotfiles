@@ -128,8 +128,11 @@ nnoremap <leader>. :tabnext<CR>
 " jk is escape
 inoremap jk <esc>
 
-" Ruler
-set colorcolumn=81
+" Ruler - only for C/C++ files
+augroup CRuler
+    autocmd!
+    autocmd BufRead,BufNewFile *.c,*.h,*.cc,*.cpp,*.hpp,*.ipp,*.cu setlocal colorcolumn=81
+augroup END
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 
 " Ignore in wildcard searches (also applies to ctrlp)
