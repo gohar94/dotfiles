@@ -54,4 +54,7 @@ if [ "$do_chsh" -eq 1 ]; then
   fi
 fi
 
+## Add Claude Code path
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.config/fish/config.fish && source ~/.config/fish/config.fish
+
 echo "${green}fish setup complete!${reset}"
