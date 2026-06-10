@@ -18,3 +18,6 @@ if test -n "$conda_bin"
 end
 
 set -g fish_greeting ""
+
+# Claude Code lives in ~/.local/bin
+fish_add_path -g $HOME/.local/bin
