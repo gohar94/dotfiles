@@ -11,7 +11,9 @@ SCRIPT_DIR=$(dirname $(readlink -f $0))
 
 # ==================================== vim ====================================
 ## Download plugins for vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 ## Backup previous vimrc
 if [ -f ~/.vimrc ]; then
   mv ~/.vimrc ~/.vimrc.old
