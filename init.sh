@@ -40,6 +40,7 @@ run_step() {
 
 run_step init_vim.sh
 run_step init_tmux.sh
+run_step init_htop.sh
 run_step init_git.sh
 run_step init_claude.sh
 if [ "$do_chsh" -eq 1 ]; then

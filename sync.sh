@@ -21,7 +21,7 @@ fi
 echo "${yellow}==> updates pulled (${before:0:7} -> ${after:0:7})${reset}"
 git --no-pager log --oneline "$before..$after"
 
-# Symlinked configs (vimrc, tmux.conf) update automatically.
+# Symlinked configs (vimrc, tmux.conf, htoprc) update automatically.
 # Re-run init scripts only if they changed, so we apply any new setup steps.
 changed=$(git diff --name-only "$before" "$after")
 if echo "$changed" | grep -qE '^init.*\.sh$'; then
